@@ -1,1 +1,0 @@
-Tranq theme
