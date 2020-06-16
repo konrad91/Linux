@@ -1,12 +1,3 @@
-/*
- *
- * Author : Aditya Shakya (adi1090x)
- * Mail : adi1090x@gmail.com
- * Github : @adi1090x
- * Reddit : @adi1090x
- *
- */
-
 configuration {
     font:                           "Ubuntu 11";
     show-icons:                     true;
@@ -39,11 +30,11 @@ window {
     border-radius:                  0px;
     border-color:                  	@border;
     height:                         75%;
-    width:                          75%;
-    location:                       southwest;
-    anchor:                         southwest;
+    width:                          50%;
+    location:                       northwest;
+    anchor:                         northwest;
     x-offset:                       0;
-    y-offset:                       -16;
+    y-offset:                       16;
 }
 
 prompt {
@@ -94,7 +85,7 @@ listview {
 
 mainbox {
     background-color:               @background;
-    children:                       [ inputbar, listview ];
+    children:                       [listview ];
     spacing:                       	10px;
     padding:                        10px;
 }
