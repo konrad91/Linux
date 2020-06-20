@@ -1,7 +1,7 @@
 configuration {
     font:                           "Ubuntu 11";
     show-icons:                     true;
-	icon-theme: 					"Papirus";
+	icon-theme: 					"Papirus-Dark";
     display-drun: 					"Applications";
     drun-display-format:            "{name}";
     threads:                        0;
@@ -14,10 +14,10 @@ configuration {
 
 
 * {
-    background:                     #0b0c0f;
-    background-alt:                 #0b0c0f;
+    background:                     #20242c;
+    background-alt:                 #20242c;
     foreground:                     #dfdfdf;
-    border:               			#16181d;
+    border:               			#2e3440;
     selected:               		#00000000;
     urgent:                         #00000000;
 }
@@ -26,7 +26,7 @@ window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-    border:                  		5px;
+    border:                  		3px;
     border-radius:                  0px;
     border-color:                  	@border;
     height:                         75%;
@@ -34,7 +34,7 @@ window {
     location:                       northwest;
     anchor:                         northwest;
     x-offset:                       0;
-    y-offset:                       16;
+    y-offset:                       28;
 }
 
 prompt {

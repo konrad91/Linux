@@ -1,5 +1,5 @@
 configuration {
-    font:                           "Ubuntu 11";
+    font:                           "Ubuntu 24";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"Applications";
@@ -14,32 +14,34 @@ configuration {
 
 
 * {
-    background:                     #0b0c0f;
-    background-alt:                 #0b0c0f;
+    background:                     #20242c;
+    background-alt:                 #20242c;
     foreground:                     #dfdfdf;
-    border:               			#16181d;
+    border:               			#2e3440;
     selected:               		#00000000;
     urgent:                         #00000000;
+    nord7:                          #8FBCBB;
+    nord10:                         #5E81AC;
 }
 
 window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-    border:                  		5px;
+    border:                  		3px;
     border-radius:                  0px;
     border-color:                  	@border;
-    height:                         25%;
-    width:                          20%;
-    location:                       northwest;
-    anchor:                         northwest;
+    height:                         22%;
+    width:                          9%;
+    location:                       northeast;
+    anchor:                         northeast;
     x-offset:                       0;
-    y-offset:                       16;
+    y-offset:                       28;
 }
 
 prompt {
     enabled: 						false;
-	padding: 						0px 0px 0px 10px;
+	padding: 						0px 0px 0px 0px;
 	background-color: 				@background;
 	text-color: 					@foreground;
 }
@@ -52,8 +54,8 @@ inputbar {
     border:                  		3px;
     border-radius:                  0px;
     border-color:                  	@border;
-    margin:                         10px;
-    padding:                        10px;
+    margin:                         0px;
+    padding:                        0px;
     position:                       center;
 }
 
@@ -86,15 +88,15 @@ listview {
 mainbox {
     background-color:               @background;
     children:                       [listview ];
-    spacing:                       	10px;
-    padding:                        10px;
+    spacing:                       	0px;
+    padding:                        0px;
 }
 
 element {
     background-color:               @background;
     text-color:                     @foreground;
     orientation:                    vertical;
-    border:                 		3px;
+    border:                 		0px;
     margin:                         10px;
     padding:                        10px;
 }
@@ -115,7 +117,7 @@ element normal.urgent,
 element alternate.urgent {
     background-color:               @urgent;
     text-color:                     @foreground;
-    border-radius:                  9px;
+    border-radius:                  0px;
 }
 
 element normal.active,
@@ -125,9 +127,9 @@ element alternate.active {
 }
 
 element selected {
-    background-color:               @selected;
+    background-color:               @nord10;
     text-color:                     @foreground;
-    border:                  		3px;
+    border:                  		0px;
     border-radius:                  0px;
     border-color:                  	@border;
 }

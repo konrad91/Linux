@@ -1,14 +1,14 @@
 #!/bin/bash
  
-res=$(echo "  Logout|  Reboot|  Shutdown" | rofi -sep "|" -dmenu -i -p 'Power Menu: ' "" -theme powermenu.rasi)
+res=$(echo "||" | rofi -sep "|" -dmenu -i -p 'Power Menu: ' "" -theme powermenu.rasi)
  
-if [[ $res = "  Logout" ]]; then
+if [[ $res = "" ]]; then
     xfce4-session-logout --logout
 fi
-if [[ $res = "  Reboot" ]]; then
+if [[ $res = "" ]]; then
     xfce4-session-logout --reboot
 fi
-if [[ $res = "  Shutdown" ]]; then
+if [[ $res = "" ]]; then
     xfce4-session-logout --halt
 fi
 exit 0
