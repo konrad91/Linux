@@ -1,5 +1,5 @@
 configuration {
-    font:                           "Ubuntu 24";
+    font:                           "Ubuntu 64";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"Applications";
@@ -28,15 +28,15 @@ window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-    border:                  		3px;
+    border:                  		1px;
     border-radius:                  0px;
-    border-color:                  	@border;
-    height:                         22%;
-    width:                          9%;
-    location:                       northeast;
-    anchor:                         northeast;
+    border-color:                  	@nord10;
+    height:                         14%;
+    width:                          52%;
+    location:                       center;
+    anchor:                         center;
     x-offset:                       0;
-    y-offset:                       28;
+    y-offset:                       0;
 }
 
 prompt {
@@ -78,7 +78,7 @@ case-indicator {
 
 listview {
     background-color:               @background;
-    columns:                        1;
+    columns:                        3;
     spacing:                        0px;
     cycle:                          false;
     dynamic:                        true;
@@ -96,7 +96,7 @@ element {
     background-color:               @background;
     text-color:                     @foreground;
     orientation:                    vertical;
-    border:                 		0px;
+    border:                 		1px;
     margin:                         10px;
     padding:                        10px;
 }
@@ -129,9 +129,9 @@ element alternate.active {
 element selected {
     background-color:               @nord10;
     text-color:                     @foreground;
-    border:                  		0px;
+    border:                  		1px;
     border-radius:                  0px;
-    border-color:                  	@border;
+    border-color:                  	@nord10;
 }
 
 element selected.urgent {

@@ -20,15 +20,17 @@ configuration {
     border:               			#2e3440;
     selected:               		#00000000;
     urgent:                         #00000000;
+    nord7:                          #8FBCBB;
+    nord10:                         #5E81AC;
 }
 
 window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-    border:                  		3px;
+    border:                  		1px;
     border-radius:                  0px;
-    border-color:                  	@border;
+    border-color:                  	@nord10;
     height:                         75%;
     width:                          75%;
     location:                       northwest;
@@ -49,9 +51,9 @@ inputbar {
     background-color:               @background;
     text-color:                     @foreground;
     expand:                         false;
-    border:                  		3px;
+    border:                  		1px;
     border-radius:                  0px;
-    border-color:                  	@border;
+    border-color:                  	@nord10;
     margin:                         10px;
     padding:                        10px;
     position:                       center;
@@ -94,7 +96,7 @@ element {
     background-color:               @background;
     text-color:                     @foreground;
     orientation:                    vertical;
-    border:                 		3px;
+    border:                 		1px;
     margin:                         10px;
     padding:                        10px;
 }
@@ -127,9 +129,9 @@ element alternate.active {
 element selected {
     background-color:               @selected;
     text-color:                     @foreground;
-    border:                  		3px;
+    border:                  		1px;
     border-radius:                  0px;
-    border-color:                  	@border;
+    border-color:                  	@nord10;
 }
 
 element selected.urgent {
